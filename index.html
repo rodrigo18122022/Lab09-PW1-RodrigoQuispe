@@ -2,13 +2,18 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta de Universidades Licenciadas</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
-
 <body>
-
-
+    <div class="container">
+        <h1>Consulta de Universidades Licenciadas</h1>
+        <form action="cgi/consultas.cgi" method="post">
+            <label for="codigo_entidad">Código de Entidad:</label>
+            <input type="text" id="codigo_entidad" name="codigo_entidad" required>
+            <input type="submit" value="Consultar">
+        </form>
+    </div>
 </body>
 </html>
+
